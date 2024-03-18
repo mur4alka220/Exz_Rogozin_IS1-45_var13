@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authorized</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        table {
+            border-collapse: collapse;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 50%;
+        }
+
+        th,
+        td {
+            text-align: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            display: block;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: #fff;
+            border-radius: 5px 5px 0 0;
+        }
+
+        td {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .back-button {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 20px auto;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Вы авторизовались!</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Добро пожаловать!</td>
+                </tr>
+                <tr>
+                    <td>Спасибо, что посетили наш проект.</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="javascript:history.back()" class="back-button">Назад</a>
+    </div>
+</body>
+
+</html>
